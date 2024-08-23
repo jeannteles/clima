@@ -1,0 +1,114 @@
+body {
+    background-image: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGExOW12bDJwNGNla3l1dm1va3R2NHZ6Y25qMGlrZmJpYmVoMXZ0aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1TpGKApbHmkZa/giphy.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0%;
+    padding: 0%;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.weather-container {
+    padding: 20px;
+    color: #fff;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    border-radius: 100px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.404);
+}
+
+.sunny-day {
+    background-color: #ffec40; /* Amarelo vibrante */
+    color: #333; /* Texto escuro para contraste */
+}
+
+.sunny-afternoon {
+    background-color: #ff9500; /* Laranja vibrante */
+    color: #fff; /* Texto claro para contraste */
+}
+
+.cloudy {
+    background-color: #aab9c2; /* Azul acinzentado */
+    color: #fff; /* Texto claro para contraste */
+}
+
+.rainy {
+    background-color: #4a90e2; /* Azul médio */
+    color: #fff; /* Texto claro para contraste */
+}
+
+.foggy {
+    background-color: #bfc0c0; /* Cinza neutro */
+    color: #333; /* Texto escuro para contraste */
+}
+
+.night {
+    background-color: #408fa380; /* Azul escuro */
+    color: #fff; /* Texto claro para contraste */
+}
+
+#error-message {
+    color: #e74c3c; /* Vermelho para erros */
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    padding: 12px;
+    text-align: center;
+    margin-top: 10px;
+    width: calc(100% - 24px);
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px 24px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 13px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .weather-container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    input[type="text"], button {
+        width: calc(100% - 24px);
+        font-size: 16px;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    input[type="text"], button {
+        width: calc(100% - 16px);
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+}
